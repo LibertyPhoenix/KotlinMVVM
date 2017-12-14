@@ -25,3 +25,28 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 19
+    targetSdkVersion = 25
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    guavaVersion = '18.0'
+    junitVersion = '4.12'
+    constraintLayoutVersion = '1.0.2'
+//  友盟
+    umengAnalyticsVersion = "latest.integration"
+//  MultiDexApplication
+    multidexVersion = '1.0.1'
+//  rxjava + okhttp + retrofit
+    retrofitVersion = "2.3.0"
+    rxjava2Version = "2.0.1"
+    okhttpVersion = "3.8.0"
+
+}
