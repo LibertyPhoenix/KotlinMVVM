@@ -6,9 +6,9 @@
         <item name="android:textAllCaps">false</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">@color/color_ff9460</item>
-        <item name="colorPrimaryDark">@color/color_ff9460</item>
-        <item name="colorAccent">@color/color_ff9460</item>
+        <item name="colorPrimary">@color/color_00b2e9</item>
+        <item name="colorPrimaryDark">@color/color_00b2e9</item>
+        <item name="colorAccent">@color/color_00b2e9</item>
         <item name="android:windowBackground">@color/color_ffffff</item>
         <item name="android:textColorHint">@color/color_80ffffff</item>
     </style>
