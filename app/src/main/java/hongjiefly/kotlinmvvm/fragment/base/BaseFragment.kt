@@ -28,9 +28,9 @@ abstract open class BaseFragment : UmengFragment() {
     }
 
 
-    protected fun getIntentData() {}
+    open fun getIntentData() {}
 
-    protected fun setListener() {}
+    open fun setListener() {}
 
 
     open fun getContentResId(): Int{
