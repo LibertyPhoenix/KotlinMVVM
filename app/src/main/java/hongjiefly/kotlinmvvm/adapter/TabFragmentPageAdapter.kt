@@ -19,7 +19,7 @@ abstract class TabFragmentPageAdapter : FragmentPagerAdapter {
         titleList = titles
     }
 
-    override fun getItem(position: Int): Fragment {
+    override fun getItem(position: Int): Fragment? {
         val fragment = geFragment(position)
         return fragment
     }
@@ -40,6 +40,6 @@ abstract class TabFragmentPageAdapter : FragmentPagerAdapter {
         super.setPrimaryItem(container, position, `object`)
     }
 
-    protected abstract fun geFragment(position: Int): Fragment
+    protected abstract fun geFragment(position: Int): Fragment?
 
 }

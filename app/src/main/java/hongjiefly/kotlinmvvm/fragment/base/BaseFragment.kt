@@ -13,12 +13,14 @@ import android.view.ViewGroup
  */
 
 abstract open class BaseFragment : UmengFragment() {
+
     var mRootLayout: View? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle?): View? {
-        mRootLayout = inflater.inflate(getContentResId(), container,false)
-        return mRootLayout
-    }
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        if (inflater != null) {
+            mRootLayout = inflater.inflate(getContentResId(), container,false)
+        }
+        return mRootLayout    }
 
 
     override  fun onActivityCreated(savedInstanceState: Bundle?) {

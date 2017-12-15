@@ -1,6 +1,6 @@
 package hongjiefly.kotlinmvvm.activity
 
-import android.app.Fragment
+import android.support.v4.app.Fragment
 
 
 /**
